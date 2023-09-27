@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(38, 37, 42);
+    min-height: 100vh;
+}
+h1{
+    color: white;
+}
+.container{
+    align-items: center;
+}
+.tituloradores{
+    text-align: center;
+}
+.parrafo{
+    font-size: x-small;
+    margin-bottom: 3px;
+    margin-top: 4px;
+}
+.col{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 
+    minmax(200px, 1fr));
+    gap: 20px;
+    overflow: hidden;
+    transform: translate(0);
+    margin: 16px;
+    transition: 0.25s;
+}
+.card:hover {
+    transform: scale(1.03);
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: -64px;
+    left: -64px;
+    width: 150%;
+    height: 76%;
+    transform: rotate(-12deg);
+    z-index: -1;
+}
+
+.card-link{
+    text-decoration: none;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: x-small;
+}
+.cardimg {
+margin-top: 10px;
+}
+.card-bodyimg{
+    background-color: rgb(48, 46, 46);
+}
+.card-title{
+    text-align: center;
+}
+.boton{
+    justify-content: center;
+    text-align: center;
+}
+
